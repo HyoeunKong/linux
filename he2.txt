@@ -1,0 +1,16 @@
+docker-compose up --scale echo=10 /docker compose.yml ehco 이미지 10개띄움
+docker-compose down 이미지,컨테이너 모두 삭제
+docker-docker-compose logs
+docker-compose stop         컨테이너 멈춤(power off)
+docker-compose restart      컨테이너 실행
+docker-compose pause        컨테이너 잠시멈춤
+docker-compose unpause     
+docker container commit --help 
+docker container commit --author "crpark" --message "my first docker image" 947 hn01360/echo:latest
+docker image inspect hn01360/echo:latest  
+
+
+
+
+
+
