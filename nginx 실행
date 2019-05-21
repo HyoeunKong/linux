@@ -1,0 +1,6 @@
+시험치다가 nginx가 내려가서 0f209499d1a4컨테이너로 들어가서 nginx를 실행했음
+root@server:~/docker# docker attach 0f2
+root@0f209499d1a4:/# cd /etc/init.d/
+root@0f209499d1a4:/etc/init.d# ls
+hwclock.sh  nginx  nginx-debug
+root@0f209499d1a4:/etc/init.d# ./nginx start
