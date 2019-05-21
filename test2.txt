@@ -1,0 +1,69 @@
+시스템 종료 명령
+poweroff
+shutdown -P now
+halt -p
+init 0
+
+런레벨에 대한 설명으로 적합한것
+런레벨 0는 종료
+런레벨 5는 그래픽 환경의 다중 사용자 모드
+
+현재 시스템에 설정된 기본 런레벨 확인 방법으로 가장 적합한것
+ls -l /lib/systemd/system/default.target
+커맨드라인에서 ?의 의미는 한 글자가 일치하는것
+
+vi 에디터 사용 방법에 대한 설명으로 올바른것
+명령 모드에서 i 또는 a 키를 누르면 입력 모드로 전환된다.
+입력 모드에서 콜론: 누루면 콜론나옴
+라인명령모드에서 i나 a 누르면 눌리기는 하지만 아무일도 x
+입력모드에서 w,q 키누르면 w,q나옴
+
+새롭게 추가한 CDROM 장치 (/dev/cdrom)를 /media/cdrom 디렉터리에 연결할때 
+mount /dev/cdrom /media/cdrom
+
+/home/ubuntu/source 파일을 /root/source 파일로 복사하는 명령으로 적합한것
+
+/home/ubuntu# cp ./source ../../root
+
+
+cd  , cd~ ->홈디렉터리로 간다.
+
+sample 파일의 소유자에게 실행 권한을 부여하는 방법으로 적합하지 않는것
+
+chmod o + x sample
+     (other)아니고 ueser의 u 를 해야함
+chmod u + x sample
+
+
+ps -ef 프로세스 내역을 보여줌
+ps -ef | grep bash bash 글자가 들어간 프로세스만 출력
+ls -l >> list.txt
+list.txt 파일이 있는 경우 기존 파일의 내용을 덮어쓰는게 아니라 이어쓴다.
+
+데이터 안전성(결함 허용)을 보장하는 RAID 방식으로 올바른것은
+RAID1,RAID5
+
+외부 공인 IP 주소와 내부 사설 IP 주소를 연결시켜주는 역할로 공인 IP주소 부족을 해소하고 외부 인터넷과 내부 사설망을 분리한 것처럼
+내부 네트워크를 보호할 수 있다.
+NAT
+
+클라이언트가 SYN패킷만 보내고 아무런 동작을 하지 않을 경우 해당 연결 요청은 TCP Connection Timeout 시간
+동안 계속 SYN Backlog Queued에 남게된다. 다수의 클라이언트가 고의로 이런 행동을 한다면  SYN Backlog Queued는 가득 차 더이상의 연결요청을 받아드릴수 없게됨
+SYN Flooding
+
+null scan 제어플레그 설정하지 않고 보내는것
+x-mas scah 제어플레그 여러개 설정하여 보냄
+
+docker container run --name hello -p 9000:80 -d example/echo:latest
+
+호스트 포트 9000을 컨테이너 포트 80에 붙이겠다.
+해당 컨테이너는 백그라운드에서 실행된다.
+
+docker# docker container cp ./test 379:/
+/root/docker/test 파일을 컨테이너의 /test파일로 복사한다.
+
+가동상태를 확인할때 사용할때 사용하는 명령어
+docker stats
+
+
+
