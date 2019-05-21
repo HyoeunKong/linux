@@ -1,9 +1,10 @@
-docker-compose up --scale echo=10 /docker compose.yml ehco ÀÌ¹ÌÁö 10°³¶ç¿ò
-docker-compose down ÀÌ¹ÌÁö,ÄÁÅ×ÀÌ³Ê ¸ğµÎ »èÁ¦
+2019.05.21 docker compose ìˆ˜ì—… ë‚´ìš©
+docker-compose up --scale echo=10 /docker compose.yml ehco ì´ë¯¸ì§€ 10ê°œë„ì›€
+docker-compose down ì´ë¯¸ì§€,ì»¨í…Œì´ë„ˆ ëª¨ë‘ ì‚­ì œ
 docker-docker-compose logs
-docker-compose stop         ÄÁÅ×ÀÌ³Ê ¸ØÃã(power off)
-docker-compose restart      ÄÁÅ×ÀÌ³Ê ½ÇÇà
-docker-compose pause        ÄÁÅ×ÀÌ³Ê Àá½Ã¸ØÃã
+docker-compose stop         ì»¨í…Œì´ë„ˆ ë©ˆì¶¤(power off)
+docker-compose restart      ì»¨í…Œì´ë„ˆ ì‹¤í–‰
+docker-compose pause        ì»¨í…Œì´ë„ˆ ì ì‹œë©ˆì¶¤
 docker-compose unpause     
 docker container commit --help 
 docker container commit --author "crpark" --message "my first docker image" 947 hn01360/echo:latest
